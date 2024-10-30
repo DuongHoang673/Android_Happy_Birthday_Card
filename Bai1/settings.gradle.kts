@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Tuan8"
+rootProject.name = "listView"
 include(":app")
  

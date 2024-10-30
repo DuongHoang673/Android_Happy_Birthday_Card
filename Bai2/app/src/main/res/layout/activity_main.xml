@@ -1,20 +1,19 @@
-<!-- activity_main.xml -->
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="16dp">
 
-    <EditText
-        android:id="@+id/editSearch"
+    <SearchView
+        android:id="@+id/search_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Search by name or ID"
-        android:inputType="text" />
+        android:queryHint="Search by name or ID" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="10dp"/>
+        android:layout_height="match_parent"
+        android:paddingTop="8dp" />
 </LinearLayout>

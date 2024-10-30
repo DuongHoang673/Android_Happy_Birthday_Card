@@ -1,12 +1,12 @@
-<!-- activity_main.xml -->
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="16dp">
 
     <EditText
-        android:id="@+id/editNumber"
+        android:id="@+id/inputNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter a positive integer"
@@ -14,7 +14,7 @@
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
@@ -31,28 +31,30 @@
             android:text="Odd Numbers" />
 
         <RadioButton
-            android:id="@+id/radioPerfectSquare"
+            android:id="@+id/radioSquare"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Perfect Squares" />
     </RadioGroup>
 
     <Button
-        android:id="@+id/btnShow"
-        android:layout_width="wrap_content"
+        android:id="@+id/showButton"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Show" />
+        android:background="@android:color/holo_green_light"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="Show"
+        android:textColorLink="@android:color/holo_green_light" />
 
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:dividerHeight="1dp" />
+        android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/tvError"
-        android:layout_width="wrap_content"
+        android:id="@+id/errorText"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#FF0000"
+        android:textColor="@android:color/holo_red_dark"
         android:visibility="gone" />
 </LinearLayout>
